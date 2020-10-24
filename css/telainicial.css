@@ -1,0 +1,22 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo .main-logo {
+    width: 100%;
+    image-orientation: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#home {
+    background: url("https://www.wallpaperland.com.br/wp-content/uploads/2019/03/sala-de-cinema-paper-land.jpg")
+}

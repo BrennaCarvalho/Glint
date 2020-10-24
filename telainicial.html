@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+
+    <link href="./css/global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app" v-bind:class="theme.darkBackgroundColor">
+      <!-- Navbar -->
+      <nav v-bind:class="theme.darkClass" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="./telainicial.html">
+            <img v-if ="theme.dark" src="./img/logoblack.jpg" alt="logo" width="70" height="70" />
+            <img v-else src="./img/logoroxo.jpg" alt="logo" width="70" height="70" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >teste</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <v-btn
+                icon
+                @click="setDark"
+              >
+                <v-icon color="grey lighten-1">
+                  mdi-brightness-6
+                </v-icon>
+              </v-btn>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <section class="container p-5" >
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+            <div class="logo">
+            <img src="./img/prove.gif" class="img-fluid" alt="aprecentação"/>
+          </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="formulario">
+            <div v-bind:class="theme.darkCard" class="card">
+              <div class="card-body">
+                <form  @submit="checkForm">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nome"
+                          aria-describedby="nome"
+                          v-model="form.nome"
+                        />
+                        <small id="nome" class="form-text text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sobrenome"
+                          aria-describedby="sobrenome"
+                          v-model="form.sobrenome"
+                        />
+                        <small
+                          id="form.sobrenome"
+                          class="form-text text-muted"
+                        ></small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="email"
+                      v-model="form.email"
+                    />
+                    <small id="email" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="senha"
+                      aria-describedby="senha"
+                      v-model="form.senha"
+                    />
+                    <small id="senha" class="form-text text-muted"></small>
+                  </div>
+                  <button type="submit" class="btn btn-glint btn-lg btn-block">
+                     Cadastra-se
+                  </button>
+                </form>
+                <p v-if="errors.length">
+                  <b>Por favor, corrija o(s) seguinte(s) erro(s):</b>
+                  <ul>
+                    <li v-for="error in errors">{{ error }}</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="./js/script.js"></script>
+</html>

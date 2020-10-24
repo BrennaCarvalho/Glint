@@ -1,89 +1,247 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
     <title>GLINT STREAMING</title>
-</head>
-<body>
-<header>   
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">GLINT.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
+  </head>
+  <body>
+    <!--cabeçalho-->
+    <nav class="nav navSombra">
+      <div class="container">
+        <div class="navContainer">
+          <a href="index.html">
+            <img calss="navLogo logo" src="" alt="" />
+          </a>
+
+          <ul class="navMenu">
+            <li>
+              <a href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="plataforma.html">Plataforma</a>
+            <li>
+              <a href="plataforma.html">GLINT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inscrição</a>
+            <li>
+              <a href="sobre.html">Sobre</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
+            <li>
+              <a href="#contato">Contato</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
-            <button type="button" class="btn btn-info">Pesquisar</button>
-          </form>
+          <div class="navContainer--menuHamburguer">
+            <i class="fas fa-bars menuHamburguer"></i>
+          </div>
         </div>
-      </nav>
-        <div class="container">
-            <br>        
-            <h1 class="headerTitle">GLINT STREAMING</h1>
-        </div>
+        <!--/navContainer-->
+      </div>
+      <!--/container-->
+      <ul class="menuDropdown">
+        <li><a class="menuDropdown--link" href="index.html">Home</a></li>
+        <li><a class="menuDropdown--link" href="plataforma.html">GLINT</a></li>
+        <li><a class="menuDropdown--link" href="#footer">Contato</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <!-- <img class="imgHeader"  src="./assets/img/bg-header.jpg" alt="uma floresta pegando fogo"> -->
+      <div class="container">
+        <h1 class="headerTitle">GLINT STREAMING</h1>
+        <img src="./img/prove.gif" alt="" />
+      </div>
+      <!--/container-->
     </header>
-    <div class="jumbotron">
-        <h1 class="display-3">Olá, usuário!</h1>
-        <p class="lead">Estamos contente pelo seu interesse na nossa plataforma.</p>
-        <hr class="my-4">
-        <form>
-            <fieldset>
-              <legend>Inscrição</legend>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserir email">
-                <small id="emailHelp" class="form-text text-muted">Nós não compartilharemos seu e-mail com mais ninguém.</small>
+
+    <main>
+      <!--Projetos-->
+      <section class="programas" id="programas">
+        <div class="container">
+          <h2 class="titulo">
+            <span class="spanMarcaTexto">
+              <span class="marcaTexto"></span>
+              PROGRAMAS:
+            </span>
+          </h2>
+          <div class="container--flex">
+            <div class="programasCards">
+              <div class="containerImg">
+                <img class="imgCards" src="-" alt="imagem" />
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-        </fieldset>
-
-        <fieldset class="form-group">
-                <legend>TERMOS</legend>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="" checked="">
-                    Concordo com os termos
-                  </label>
-                </div>
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="" disabled="">
-                    Não concordo com os termos
-                  </label>
-                
-        </fieldset>
-    </div>
-
-<br>
-<br>
-<center><img src="img/OI.gif" alt="obrigado" width=600 height=600></center>
+              <div>
+                <h3 class="projetosCardsTitulo">FILMES E SÉRIES</h3>
+                <a href="-">
+                  <p>-</p>
+                </a>
+              </div>
+            </div>
+            <div class="programaCards">
+              <div class="containerImg">
+                <img class="imgCards" src="-" alt="imagem" />
+              </div>
+              <div>
+                <h3 class="programaCardsTitulo">MÚSICA E PODCAST</h3>
+                <a href="-">
+                  <p>-</p>
+                </a>
+              </div>
+            </div>
+            <div class="programaCards projetosCards--margin">
+              <div class="containerImg">
+                <a href="-">
+                  <img class="imgCards" src="-" alt="imagem" />
+                </a>
+              </div>
+              <div>
+                <h3 class="projetosCardsTitulo">DOCUMENTÁRIOS</h3>
+                <a href="">
+                  <p>-</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--/caontainer--flex-->
+        </div>
+        <!--/container--->
+        <button class="projetosBtn">
+          <a href="inscricao.html"> ADQUIRA </a>
+        </button>
+      </section>
+      <!--PLATAFORMA-->
+      <section class="plataforma" id="Plataforma">
+        <h2 class="plataformatitulo">
+          <span class="spanMarcaTexto">
+            <span class="marcaTexto--white"></span>
+            --PLATAFORMA--
+          </span>
+        </h2>
+        <div class="container">
+          <div class="plataformaCards container--flex">
+            <div class="plataformaImg">
+              <a href="-">
+                <img src="-" alt="imagem" />
+              </a>
+            </div>
+            <a href="-" class="plataformaTexto"> - </a>
+          </div>
+          <div class="noticiasCards container--flex">
+            <div class="plataformaImg block">
+              <a href="-">
+                <img src="-" alt="imagem" />
+              </a>
+            </div>
+            <a href="-" class="plataformaTexto"> - </a>
+            <div class="plataformaImg ative">
+              <a href="-">
+                <img src="-" alt="imagem" />
+              </a>
+            </div>
+          </div>
+          <div class="plataformaCards container--flex">
+            <div class="plataformaImg">
+              <a href="-">
+                <img src="-" alt="imagem" />
+              </a>
+            </div>
+            <a href="-" class="plataformaTexto"> - </a>
+          </div>
+          <!--/container--flex---->
+        </div>
+        <!--/container--->
+        <button class="plataformaBtn">
+          <a href="plataforma.html"> Ver mais </a>
+        </button>
+      </section>
+    </main>
+    <!--Inscrição-->
+    <section class="inscricao">
+      <div class="container">
+        <h2 class="titulo">
+          <span class="spanMarcaTexto">
+            <span class="marcaTexto"></span>
+            Inscrição
+          </span>
+        </h2>
+        <form class="inscricaoForm">
+          <div class="newsletterLabel">
+            <label for="email-usuario">Faça agora o pré-cadastro</label>
+          </div>
+          <div class="container--flex">
+            <input
+              class="newsletterInput"
+              type="email"
+              name="email-usuario"
+              id=""
+              placeholder="nome@email.com"
+            />
+            <input class="newsletterBtn" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </section>
     <!--footer-->
+    <section class="footerBg" id="#contato">
+      <div class="container container--flex">
+        <div class="footerBox--conteudo">
+          <ul class="footerRedes">
+            <li>
+              <a href="https://www.facebook.com" target="_blank">
+                <img src="-" alt="icone do facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank">
+                <img class="iconInsta" src="" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" target="_blank">
+                <img src="-" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  class="iconInsta"
+                  src="./assets/img/icones/email-icon.png"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footerBox">
+          <h3 class="footerBoxTitle">Sobre</h3>
+          <p>
+            Plataforma de streaming online que engloba: filmes, séries, música e
+            podcats em um só lugar.
+          </p>
+        </div>
+      </div>
+      <!--/container-->
+    </section>
+    <img src="./img/oi (2).gif" alt="obrigado" id="obrigado" />
     <footer class="footerCopyright">
-        <p>GLINT streaming online © 2020. Desenvolvido por BRENNA SILVA CARVALHO​, DAPHNE GOMES DA PIEDADE​, PAMELA VICTORIA MACEDO DOS SANTOS,​ VINICIUS DE OLIVEIRA CORREA​, VITOR HUGO DE SOUZA LIMA DANTAS​. </p>
-    </footer>  
-
-</body>
+      <p>
+        GLINT streaming online © 2020. Desenvolvido por BRENNA SILVA CARVALHO​,
+        DAPHNE GOMES DA PIEDADE​, PAMELA VICTORIA MACEDO DOS SANTOS,​ VINICIUS
+        DE OLIVEIRA CORREA​, VITOR HUGO DE SOUZA LIMA DANTAS​.
+      </p>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script
 </html>
