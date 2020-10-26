@@ -10,6 +10,7 @@ const app = new Vue({
       darkBackgroundColor: "bg-glint",
       darkCard: "card-glint",
       darkInput: "input-glint",
+      darktext: "text-glint",
       },
       form:{
         nome: null,
@@ -27,11 +28,13 @@ const app = new Vue({
         this.theme.darkBackgroundColor = "bg-glint-dark";
         this.theme.darkCard = "card-glint-dark";
         this.theme.darkInput = "input-glint-dark";
+        this.theme.darktexto = "text-glint-dark";
       } else {
         this.theme.darkClass = "glint";
         this.theme.darkBackgroundColor = "bg-glint";
         this.theme.darkCard = "card-glint";
         this.theme.darkInput = "input-glint";
+        this.theme.darktexto = "text-glint";
       }
     },
     checkForm: function (e) {

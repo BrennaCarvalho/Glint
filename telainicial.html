@@ -41,15 +41,6 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -58,17 +49,27 @@
                   role="button"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  >teste</a
+                  >Sobre</a
                 >
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#list-item-1">O QUE É GLINT</a>
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Separated link</a>
                 </div>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#list-item-2">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#list-item-3">About</a>
+              </li>
+              
             </ul>
+
+            <a href="/plataforma.html" class="btn btn-entre" data-uia="header-login-link">Entrar</a>
+
             <div class="form-inline my-2 my-lg-0">
               <v-btn
                 icon
@@ -162,6 +163,23 @@
             </div>
           </div>
         </div>
+
+        <img class="img-filmes" src="./img/imgfilmes.jpg" >
+      <!--Conteudo-->
+       <div v-bind:class="theme.darktexto" class="text">
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="conteudo">
+          <div>
+          <h2 id="list-item-1">O QUE É GLINT</h2>
+          <p>Plataforma de streaming online que engloba:<br>filmes, séries, música e podcats em um só lugar.</p>
+          </div>
+          <h4 id="list-item-2">Item 2</h4>
+          <p>...</p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>...</p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>...</p>
+        </div>
+      </div>
       </section>
     </div>
   </body>

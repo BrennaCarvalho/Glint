@@ -23,6 +23,7 @@
   --dark: #17141f;
   --fundodark: rgb(18, 18, 20);
   --card-bg:rgb(32, 32, 36);
+  --white-glint: #fcfcff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -55,7 +56,7 @@ body {
 }
 
 .bg-glint{
-    background-color: var(--white) !important;
+    background-color: var(--white-glint) !important;
 }
 
 .bg-glint-dark{
@@ -78,6 +79,14 @@ body {
 .input-glint{
     background-color: var(--white) !important;
 }
+
+.text-glint-dark{
+   color:var(--white) !important;
+}
+
+.text-glint{
+    color: var(--dark) !important;
+}
 .btn-glint {
   width: 100%;
   height: 50px;
@@ -97,4 +106,38 @@ body {
 
 .v-icon {
     color: var(--white) !important;
+}
+
+.img-filmes{
+    width: 100%;
+    height: 400px;
+
+}
+.btn-entre{
+    background-color: var(--secondary) !important;
+    color: var(--white) !important;
+   
+}
+
+.img-filmes{
+    display: flex;
+}
+
+.perguntas{
+    margin: 70px;
+    display: flex;
+
+}
+
+#list-item-1{
+    color: var(--primary) !important;
+   
+}
+
+.conteudo{
+    margin: 10px;
+}
+
+.text{
+    padding: 40px;
 }
