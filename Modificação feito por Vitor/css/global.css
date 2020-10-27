@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #593196;
+  --pink: #e83e8c;
+  --red: #fc3939;
+  --orange: #fd7e14;
+  --yellow: #efa31d;
+  --green: #13b955;
+  --teal: #20c997;
+  --cyan: #009cdc;
+  --white: #fff;
+  --gray: #868e96;
+  --gray-dark: #343a40;
+  --primary: #593196;
+  --secondary: #a991d4;
+  --success: #13b955;
+  --info: #009cdc;
+  --warning: #efa31d;
+  --danger: #fc3939;
+  --light: #fcfcfc;
+  --dark: #17141f;
+  --fundodark: rgb(18, 18, 20);
+  --card-bg:rgb(32, 32, 36);
+  --white-glint: #fcfcff;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--light);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.glint{
+    background-color: var(--primary) !important;
+}
+
+.glint-dark{
+    background-color: var(--dark) !important;
+}
+
+.bg-glint{
+    background-color: var(--white-glint) !important;
+}
+
+.bg-glint-dark{
+    background-color: var(--fundodark) !important;
+}
+
+.card-glint-dark{
+    background-color: var(--card-bg) !important;
+    color: var(--white);
+}
+
+.card-glint{
+    background-color: var(--white) !important;
+}
+
+.input-glint-dark{
+    background-color: var(--fundodark) !important; 
+}
+
+.input-glint{
+    background-color: var(--white) !important;
+}
+
+.text-glint-dark{
+   color:var(--white) !important;
+}
+
+.text-glint{
+    color: var(--dark) !important;
+}
+.btn-glint {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.09375rem;
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: opacity 2s;
+}
+.btn-glint:hover{
+    opacity: 0.9;
+    color: rgba(89,49,150,1);
+}
+
+.v-icon {
+    color: var(--white) !important;
+}
+
+.img-filmes{
+    width: 100%;
+    height: 400px;
+
+}
+.btn-entre{
+    background-color: var(--secondary) !important;
+    color: var(--white) !important;
+   
+}
+
+.img-filmes{
+    display: flex;
+}
+
+.perguntas{
+    margin: 70px;
+    display: flex;
+
+}
+
+#list-item-1{
+    color: var(--primary) !important;
+   
+}
+
+.conteudo{
+    margin: 10px;
+}
+
+.text{
+    padding: 40px;
+}
